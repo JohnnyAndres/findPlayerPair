@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+        input{
+            width: 250px;
+            height: 40px;
+            border: 1px solid black;
+            border-radius: 4px;
+        }
+        button{
+            color: white;
+            background-color: rgb(34, 97, 15);
+            border-radius: 4px;
+            border: none;
+            height: 40px;
+        }
+    </style>
+</head>
+<body>
+    <h1>See The Player's Pair</h1>
+    <div>
+        <label for="players-height">
+            <input type="number" name="" placeholder="Type a number" id="players-height">
+        </label>
+        <button onclick="search()" >Search</button>
+    </div>
+    <ul id="list" >  
+    </ul>
+    <script src="./index.js"></script>
+</body>
+</html>
